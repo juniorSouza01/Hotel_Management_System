@@ -74,7 +74,7 @@ int main()
                 cin >> quant;
                 if (Qburger - Sburger >= quant){
                     Sburger = Sburger + quant;
-                    Total_burger = Total_burger + quant * 250;
+                    Total_burger = Total_burger + quant * 120;
                     cout << "\n\n\t\t" << quant << " burger is the order! ";
 
                 }else {
@@ -87,13 +87,43 @@ int main()
                 cin >> quant;
                 if (Qnoodles - Snoodles >= quant){
                     Snoodles = Snoodles + quant;
-                    Total_noodles = Total_noodles + quant * 250;
+                    Total_noodles = Total_noodles + quant * 140;
                     cout << "\n\n\t\t" << quant << " noodles is the order! ";
 
                 }else {
                     cout << "\n\tOnly" << Qnoodles - Snoodles << "Noodles remaining in hotel";
                 break;
+
+            case 5:
+                cout << "\n\n Enter Shakes Quantity: ";
+
+                cin >> quant;
+                if (Qshake - Sshake >= quant){
+                    Sshake = Sshake + quant;
+                    Total_shake = Total_shake + quant * 120;
+                    cout << "\n\n\t\t" << quant << " shake is the order! ";
+
+                }else {
+                    cout << "\n\tOnly" << Qshake - Sshake << "Shake remaining in hotel";
+                break;
+
+            case 6:
+                cout << "\n\n Enter Chicken-roll Quantity: ";
+
+                cin >> quant;
+                if (Qchicken - Schicken >= quant){
+                    Schicken = Schicken + quant;
+                    Total_chicken = Total_chicken + quant * 150;
+                    cout << "\n\n\t\t" << quant << " chicken-roll is the order! ";
+
+                }else {
+                    cout << "\n\tOnly" << Qchicken - Schicken << "Chicken-roll remaining in hotel";
+                break;
                 }
+
+            }
+
+        }
 
                 }
 
