@@ -40,33 +40,63 @@ int main()
     cout << "\n\n Please Enter your choice!";
     cin >> choice;
 
-    switch (choice){ case 1:
-
+    switch (choice){ 
+        
+        case 1:
         cout << "\n\n Enter the number of rooms you want: ";
-        cin >> quant;
-
-        if (Qrooms - Srooms >= quant){
-
-            Srooms = Srooms + quant;
-            Total_rooms = Total_rooms + quant * 1200;
-            cout << "\n\n\t\t" << quant << "room/rooms have been alloted to you";
-
-        }else {
-            cout << "\n\tOnly" << Qrooms - Srooms << "Rooms remaining in hotel";
-            break;
-
-        case 2:
-            cout << "\n\n Enter Pasta Quantity: ";
 
             cin >> quant;
-            if (Qpasta - Spasta >= quant){
-                Spasta = Spasta + quant;
-                Total_pasta = Total_pasta + quant * 250;
-                cout << "\n\n\t\t" << quant << " pasta is the order! ";
+            if (Qrooms - Srooms >= quant){
+                Srooms = Srooms + quant;
+                Total_rooms = Total_rooms + quant * 1200;
+                cout << "\n\n\t\t" << quant << "room/rooms have been alloted to you";
 
             }else {
-                cout << "\n\tOnly" << Qpasta - Spasta << "Rooms remaining in hotel";
+                cout << "\n\tOnly" << Qrooms - Srooms << "Rooms remaining in hotel";
+            break;
+
+            case 2:
+                cout << "\n\n Enter Pasta Quantity: ";
+    
+                cin >> quant;
+                if (Qpasta - Spasta >= quant){
+                    Spasta = Spasta + quant;
+                    Total_pasta = Total_pasta + quant * 250;
+                    cout << "\n\n\t\t" << quant << " pasta is the order! ";
+    
+                }else {
+                cout << "\n\tOnly" << Qpasta - Spasta << "Pasta remaining in hotel";
+            break;
+
+            case 3:
+                cout << "\n\n Enter Burger Quantity: ";
+
+                cin >> quant;
+                if (Qburger - Sburger >= quant){
+                    Sburger = Sburger + quant;
+                    Total_burger = Total_burger + quant * 250;
+                    cout << "\n\n\t\t" << quant << " burger is the order! ";
+
+                }else {
+                    cout << "\n\tOnly" << Qburger - Sburger << "Burger remaining in hotel";
                 break;
+
+            case 4:
+                cout << "\n\n Enter Noodle Quantity: ";
+
+                cin >> quant;
+                if (Qnoodles - Snoodles >= quant){
+                    Snoodles = Snoodles + quant;
+                    Total_noodles = Total_noodles + quant * 250;
+                    cout << "\n\n\t\t" << quant << " noodles is the order! ";
+
+                }else {
+                    cout << "\n\tOnly" << Qnoodles - Snoodles << "Noodles remaining in hotel";
+                break;
+                }
+
+                }
+
             }
         }
     }
